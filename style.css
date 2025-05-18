@@ -1,4 +1,3 @@
-/* General page styling */
 body {
   background-color: #111;
   color: #fff;
@@ -8,31 +7,49 @@ body {
   padding: 20px;
 }
 
-/* Title color */
 h1 {
   color: gold;
 }
 
-/* SVG centering */
+#controls {
+  margin: 10px;
+}
+
 svg {
   display: block;
   margin: 20px auto;
 }
 
-/* Base style for hexagons */
 .hex {
   fill: #2b2b2b;
   stroke: #444;
   stroke-width: 1;
   cursor: pointer;
+  transition: 0.2s;
 }
 
-/* On hover highlight */
 .hex:hover {
   fill: #00c8ff;
 }
 
-/* Selected tile color */
 .selected {
-  fill: #ff4b91;
+  stroke: gold;
+  stroke-width: 2;
+}
+
+.monster {
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.vampire {
+  fill: red;
+}
+
+.werewolf {
+  fill: brown;
+}
+
+.ghost {
+  fill: cyan;
 }

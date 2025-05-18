@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Monster Mayhem - Hex Grid Game</title>
-
-  <!-- Linking external CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>👾 Monster Mayhem - Hex Grid Game</h1>
-  <p>Hover over a tile to highlight it. Click to select/deselect a tile.</p>
+  <p>Click edge tiles to place a monster. Monster types: 🧛 Vampire, 🐺 Werewolf, 👻 Ghost</p>
 
-  <!-- SVG container for hex grid -->
+  <div id="controls">
+    <label>Select Monster:</label>
+    <select id="monsterSelect">
+      <option value="vampire">🧛 Vampire</option>
+      <option value="werewolf">🐺 Werewolf</option>
+      <option value="ghost">👻 Ghost</option>
+    </select>
+  </div>
+
   <svg id="hexGrid"></svg>
 
-  <!-- Linking external JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
