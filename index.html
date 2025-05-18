@@ -1,17 +1,29 @@
+<!-- 
+  Monster Mayhem - Hex Grid Game
+  GitHub Repository: https://github.com/HARDIK2024644/MonsterMayhem_HexGridSVG.git
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Monster Mayhem - Hex Grid Game</title>
+
+  <!-- Link to external CSS for styling -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Game Title -->
   <h1>👾 Monster Mayhem - Hex Grid Game</h1>
+
+  <!-- Game Instructions -->
   <p>Click edge tiles to place a monster. Monster types: 🧛 Vampire, 🐺 Werewolf, 👻 Ghost</p>
 
+  <!-- Monster selection dropdown -->
   <div id="controls">
-    <label>Select Monster:</label>
+    <label for="monsterSelect">Select Monster:</label>
     <select id="monsterSelect">
       <option value="vampire">🧛 Vampire</option>
       <option value="werewolf">🐺 Werewolf</option>
@@ -19,8 +31,10 @@
     </select>
   </div>
 
+  <!-- SVG element where the hex grid will be drawn (used in older versions, now canvas is better) -->
   <svg id="hexGrid"></svg>
 
+  <!-- Link to JavaScript file that contains the game logic -->
   <script src="script.js"></script>
 </body>
 </html>
